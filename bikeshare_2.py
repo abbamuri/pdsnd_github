@@ -208,7 +208,7 @@ def more_data(df):
     raw_data = input('Would you like to see raw data   yes or no?\n')
     while raw_data.lower() == 'yes':
         first_five_lines = df.iloc[st: st+5]
-        print('The five lines of the raw data is:\n',first_five_lines)
+        print('The five lines of the raw data is:\n {}'.format(first_five_lines))
         st += 5
         raw_data = input('Would you like to see five more lines of the raw data  yes or no?\n')
 
