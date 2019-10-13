@@ -185,7 +185,7 @@ def user_stats(df):
         counts_of_gender = df['Gender'].value_counts()
         print(counts_of_gender)
     except:
-        print('There is no data available for this selection')    
+        print('There is no data available for this selection')
 
     # Display earliest, most recent, and most common year of birth
     try:
@@ -194,17 +194,17 @@ def user_stats(df):
         most_recent = df['Birth Year'].max()
         most_common = df['Birth Year'].mode()[0]
         print('The earliest year of birth is:' + str(earliest))
-        print('The most recent year of birth:' + str(most_recent)) 
-        print('The most common year of birth is:' + str(most_common))  
+        print('The most recent year of birth:' + str(most_recent))
+        print('The most common year of birth is:' + str(most_common))
     except:
-        print('There is no data available for this selection') 
+        print('There is no data available for this selection')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
     # Display raw data
 def more_data(df):
-    st = 0    
+    st = 0
     raw_data = input('Would you like to see raw data   yes or no?\n')
     while raw_data.lower() == 'yes':
         first_five_lines = df.iloc[st: st+5]
@@ -223,7 +223,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         more_data(df)
-
+          # ask if the user wishes to restart the program
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
