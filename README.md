@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+Sunday, October 13, 2019
 
 ### Project Title
-Replace the Project Title
+Explore US bike share
 
 ### Description
-Describe what your project is about and what it does
+The project is an interactive environment which accepts inputs used to explore bike share data from three major US cities, it carries out descriptive statistics and give out answers to some questions on the bike share data.  
 
 ### Files used
-Include the files used
+The data files used in the project are:
+
+chicago.csv
+washinton.csv
+new_york_city.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
